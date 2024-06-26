@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Store</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Pet Store - Pets with Price > 5000 RS</h1>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <form id="filterForm">
+                    <div class="form-group">
+                        <label for="priceFilter">Filter by Price (> 5000 RS):</label>
+                        <input type="number" class="form-control" id="priceFilter" placeholder="Enter minimum price">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Filter Pets</button>
+                </form>
+            </div>
+        </div>
+        <div id="petList" class="mt-4"></div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery (needed for Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
